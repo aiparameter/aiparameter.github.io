@@ -2,10 +2,10 @@
   "name": "The Parameter",
   "tagline": "Independent coverage of AI models, tools and research",
   "description": "The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source.",
-  "url": "https://theparameter.example",
+  "url": "https://aiparameter.github.io/",
   "locale": "en",
   "today": "2026-10-12",
-  "contactEmail": "editor@theparameter.example",
+  "contactEmail": "ai.seo.kh@gmail.com",
   "newsletter": {
     "endpoint": "",
     "method": "POST",
