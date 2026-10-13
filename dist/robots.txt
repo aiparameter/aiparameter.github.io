@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /search/
-
-Sitemap: https://theparameter.example/sitemap.xml
