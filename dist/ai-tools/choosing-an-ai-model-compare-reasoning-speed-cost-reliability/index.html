@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choosing an AI Model: How to Compare Reasoning, Speed, Cost, and Reliability | The Parameter</title>
+<meta name="description" content="Public leaderboards answer a different question from yours. Build a small test set, measure four properties, and let the numbers from your own tasks decide.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Parameter" href="/feed.xml">
+<meta property="og:site_name" content="The Parameter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Choosing an AI Model: How to Compare Reasoning, Speed, Cost, and Reliability">
+<meta property="og:description" content="Public leaderboards answer a different question from yours. Build a small test set, measure four properties, and let the numbers from your own tasks decide.">
+<meta property="og:url" content="https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/">
+<meta property="og:image" content="https://theparameter.example/images/og/choosing-an-ai-model-compare-reasoning-speed-cost-reliability.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-08">
+<meta property="article:modified_time" content="2026-10-10">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>document.documentElement.className+=" js"</script>
+<script src="/assets/js/site.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://theparameter.example/#organization","name":"The Parameter","url":"https://theparameter.example/","logo":{"@type":"ImageObject","url":"https://theparameter.example/images/logo-512.png","width":512,"height":512},"description":"The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source."},{"@type":"Person","@id":"https://theparameter.example/about/#priya-nandakumar","name":"Priya Nandakumar","jobTitle":"Research Editor","url":"https://theparameter.example/about/#priya-nandakumar","worksFor":{"@id":"https://theparameter.example/#organization"}},{"@type":"Article","@id":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/#article","headline":"Choosing an AI Model: How to Compare Reasoning, Speed, Cost, and Reliability","description":"Public leaderboards answer a different question from yours. Build a small test set, measure four properties, and let the numbers from your own tasks decide.","image":["https://theparameter.example/images/choosing-an-ai-model-compare-reasoning-speed-cost-reliability-1200.webp","https://theparameter.example/images/og/choosing-an-ai-model-compare-reasoning-speed-cost-reliability.jpg"],"datePublished":"2026-10-08","dateModified":"2026-10-10","author":{"@id":"https://theparameter.example/about/#priya-nandakumar"},"publisher":{"@id":"https://theparameter.example/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/"},"articleSection":"Model Comparisons","keywords":"evaluation, model selection, benchmarks","wordCount":524,"inLanguage":"en","isAccessibleForFree":true,"citation":[{"@type":"CreativeWork","name":"Holistic Evaluation of Language Models","url":"https://arxiv.org/abs/2211.09110"},{"@type":"CreativeWork","name":"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena","url":"https://arxiv.org/abs/2306.05685"}]},{"@type":"WebPage","@id":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/","url":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/","name":"Choosing an AI Model: How to Compare Reasoning, Speed, Cost, and Reliability","isPartOf":{"@id":"https://theparameter.example/#website"},"breadcrumb":{"@id":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/#breadcrumb"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://theparameter.example/"},{"@type":"ListItem","position":2,"name":"AI Tools","item":"https://theparameter.example/ai-tools/"},{"@type":"ListItem","position":3,"name":"Model Comparisons","item":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/"}],"@id":"https://theparameter.example/ai-tools/choosing-an-ai-model-compare-reasoning-speed-cost-reliability/#breadcrumb"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="dateline"><div class="container"><p><time datetime="2026-10-12">Monday, October 12, 2026</time></p><p class="dateline-note">Demonstration edition</p></div></div>
+  <div class="masthead container">
+    <a class="brand" href="/"><svg class="brand-mark" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#12161b"/><g stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></g><circle cx="20" cy="10" r="3.5" fill="#00b8e6"/><circle cx="11" cy="16" r="3.5" fill="#fff"/><circle cx="17" cy="22" r="3.5" fill="#0052ff"/></svg><span class="brand-name">The Parameter</span></a>
+    <div class="masthead-actions">
+      <a class="button subscribe-link" href="/newsletter/">Subscribe</a>
+      <button class="button button--ghost menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+  </div>
+  <div class="site-menu" id="site-menu">
+    <div class="container menu-inner">
+      <nav class="primary-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/ai-news/">AI News</a></li><li><a href="/trends/">Trends</a></li><li><a href="/ai-tools/">AI Tools</a></li><li><a href="/research/">Research</a></li><li><a href="/guides/">Guides</a></li><li><a href="/about/">About</a></li><li><a href="/newsletter/">Newsletter</a></li></ul></nav>
+      <search class="site-search">
+        <form action="/search/" method="get">
+          <label class="sr-only" for="site-search-q">Search articles</label>
+          <input type="search" id="site-search-q" name="q" placeholder="Search articles" autocomplete="off" enterkeyhint="search">
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </search>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/ai-tools/">AI Tools</a></li><li><span aria-current="page">Model Comparisons</span></li></ol></nav>
+<article>
+  <header class="article-header">
+    <p class="category">Model Comparisons</p>
+    <h1 class="article-title">Choosing an AI Model: How to Compare Reasoning, Speed, Cost, and Reliability</h1>
+    <p class="article-dek">Public leaderboards answer a different question from yours. Build a small test set, measure four properties, and let the numbers from your own tasks decide.</p>
+    <div class="byline-block">
+      <p>By <a href="/about/#priya-nandakumar" rel="author">Priya Nandakumar</a>, Research Editor</p>
+      <p>Published <time datetime="2026-10-08">October 8, 2026</time></p>
+      <p>Updated <time datetime="2026-10-10">October 10, 2026</time></p>
+      <p>3 min read</p>
+    </div>
+    <p class="notice">Demonstration article. It shows the publication’s editorial format and reports no real events, statistics, quotations or prices. The sources listed below are real, published documents.</p>
+  </header>
+  <figure class="article-hero">
+    <img src="/images/choosing-an-ai-model-compare-reasoning-speed-cost-reliability-800.webp" srcset="/images/choosing-an-ai-model-compare-reasoning-speed-cost-reliability-480.webp 480w, /images/choosing-an-ai-model-compare-reasoning-speed-cost-reliability-800.webp 800w, /images/choosing-an-ai-model-compare-reasoning-speed-cost-reliability-1200.webp 1200w" sizes="(min-width: 80rem) 1176px, 100vw" width="1200" height="675" alt="Abstract illustration of a balance with four weights, representing trade-offs between model qualities" fetchpriority="high">
+    <figcaption>Abstract illustration of a balance with four weights, representing trade-offs between model qualities. Original illustration for The Parameter.</figcaption>
+  </figure>
+  <div class="article-layout">
+    <nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#why-leaderboards-are-not-enough">Why leaderboards are not enough</a></li><li><a href="#build-a-small-test-set">Build a small test set</a></li><li><a href="#measure-four-properties">Measure four properties</a></li><li><a href="#decide-with-a-table">Decide with a table</a></li><li><a href="#keep-the-decision-open">Keep the decision open</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+    <div class="article-main">
+      <div class="article-body">
+<p>Public leaderboards rank models on tasks someone else chose. Your work has different inputs, different tolerance for error and a different budget. The reliable way to choose a model is to measure four properties on your own tasks, with a test set small enough to build in a day.</p>
+<h2 id="why-leaderboards-are-not-enough">Why leaderboards are not enough</h2>
+<p>Broad benchmarks are useful for narrowing a field. The HELM project made the case that evaluating a model on one metric hides trade-offs, and it measured accuracy alongside robustness, calibration, fairness and efficiency across many scenarios. The same point applies to your own choice: a model that wins on average accuracy can lose on cost, speed or consistency for the job you need done.</p>
+<p>Human-preference rankings add another signal, but they measure what voters preferred, which is not always what is correct. Research on automated judges found that they can track human preferences closely while favoring longer answers and being sensitive to answer order. A ranking built on either method answers “which response did people or a judge like?” rather than “which model solves my problem?”</p>
+<h2 id="build-a-small-test-set">Build a small test set</h2>
+<ol><li>Collect 30 to 50 real inputs from the task, including a few hard and a few ambiguous ones.</li><li>Write down what a good output looks like for each, before running any model.</li><li>Keep the set private, so that it cannot leak into a vendor’s training data.</li><li>Include cases where the right answer is “this cannot be determined.”</li></ol>
+<h2 id="measure-four-properties">Measure four properties</h2>
+<h3 id="reasoning-quality">Reasoning quality</h3>
+<p>Score each output against your reference. Use a simple rubric such as correct, partly correct or wrong, and have a second person grade a sample. If you use a model as a grader, check its grades against yours on ten cases first.</p>
+<h3 id="speed">Speed</h3>
+<p>Record the time to the first token and the time to completion. These matter differently: the first affects perceived responsiveness in a live product, the second affects batch throughput. Measure at the times of day you will actually run.</p>
+<h3 id="cost">Cost</h3>
+<p>Calculate cost per completed task, not cost per token. A cheaper model that needs two attempts or longer prompts may cost more. Read current prices from the vendor and record the date you checked them.</p>
+<h3 id="reliability">Reliability</h3>
+<p>Run each input several times. Note how often the output changes in substance, how often the format breaks, and how often the model refuses or fails. A model that is brilliant on one run and wrong on the next is difficult to build on.</p>
+<h2 id="decide-with-a-table">Decide with a table</h2>
+<div class="table-wrap" role="region" aria-label="Decide with a table (table)" tabindex="0"><table><thead><tr><th scope="col">Model</th><th scope="col">Correct</th><th scope="col">Median time</th><th scope="col">Cost per task</th><th scope="col">Format failures</th></tr></thead><tbody><tr><th scope="row">Option A</th><td>your result</td><td>your result</td><td>your result</td><td>your result</td></tr><tr><th scope="row">Option B</th><td>your result</td><td>your result</td><td>your result</td><td>your result</td></tr></tbody></table></div>
+<p>Weight the columns by what the task needs. A support classifier may weigh cost and speed heavily. A legal summarizer will weigh correctness above both.</p>
+<h2 id="keep-the-decision-open">Keep the decision open</h2>
+<p>Models change, prices change and your needs change. Keep the test set, rerun it when a vendor announces an update, and record the date and version you tested. The result is a decision you can defend and revisit, rather than a preference inherited from a leaderboard.</p>
+      </div>
+      <section class="sources" aria-labelledby="sources">
+        <h2 id="sources">Sources</h2>
+        <ol><li><a href="https://arxiv.org/abs/2211.09110">Holistic Evaluation of Language Models</a>. Liang et al., arXiv, 2022.</li><li><a href="https://arxiv.org/abs/2306.05685">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a>. Zheng et al., arXiv, 2023.</li></ol>
+      </section>
+      <footer class="article-footer">
+        <p><strong>Priya Nandakumar</strong>, Research Editor. Demonstration byline. Reads papers and evaluation methods so readers do not have to.</p>
+        <p>Last updated <time datetime="2026-10-10">October 10, 2026</time>. Spotted an error? See our <a href="/editorial-policy/#corrections">corrections policy</a>.</p>
+        <p>More from <a href="/ai-tools/">AI Tools</a>.</p>
+      </footer>
+    </div>
+  </div>
+</article>
+</div>
+<aside class="related" aria-labelledby="related-h"><div class="container">
+  <div class="section-head"><h2 class="section-title" id="related-h">Related articles</h2></div>
+  <div class="card-grid"><article class="article-card">
+  <div class="thumb"><img src="/images/five-types-of-ai-research-tools-800.webp" srcset="/images/five-types-of-ai-research-tools-480.webp 480w, /images/five-types-of-ai-research-tools-800.webp 800w, /images/five-types-of-ai-research-tools-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">AI Tools</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/ai-tools/five-types-of-ai-research-tools/">Five Types of AI Research Tools Worth Evaluating for Faster, More Reliable Knowledge Work</a></h3>
+  <p class="summary">Search assistants, document readers, citation checkers, data analysts and note systems compared by use case and limitation. Pricing is deliberately omitted until verified.</p>
+  <footer class="article-card__metadata"><p class="byline">By Priya Nandakumar</p><p class="meta"><time datetime="2026-10-09">Oct 9, 2026</time><span class="dot" aria-hidden="true">·</span><span>3 min read</span></p></footer>
+</article><article class="article-card">
+  <div class="thumb"><img src="/images/inside-the-new-ai-model-800.webp" srcset="/images/inside-the-new-ai-model-480.webp 480w, /images/inside-the-new-ai-model-800.webp 800w, /images/inside-the-new-ai-model-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">AI News</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/ai-news/inside-the-new-ai-model/">Inside the New AI Model: What Changed, Who Benefits, and What Remains Uncertain</a></h3>
+  <p class="summary">A worked method for reading any model announcement: separate what the vendor changed from what independent evaluation can confirm, and name what stays unknown.</p>
+  <footer class="article-card__metadata"><p class="byline">By Amara Ellison</p><p class="meta"><time datetime="2026-10-12">Oct 12, 2026</time><span class="dot" aria-hidden="true">·</span><span>4 min read</span></p></footer>
+</article><article class="article-card">
+  <div class="thumb"><img src="/images/what-the-latest-ai-research-demonstrates-800.webp" srcset="/images/what-the-latest-ai-research-demonstrates-480.webp 480w, /images/what-the-latest-ai-research-demonstrates-800.webp 800w, /images/what-the-latest-ai-research-demonstrates-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">Research</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/research/what-the-latest-ai-research-demonstrates/">What the Latest AI Research Actually Demonstrates, and What It Does Not</a></h3>
+  <p class="summary">A reader's guide to AI papers: separate the measurement from the headline, check what the benchmark covers, and watch for the leap from correlation to capability.</p>
+  <footer class="article-card__metadata"><p class="byline">By Priya Nandakumar</p><p class="meta"><time datetime="2026-10-06">Oct 6, 2026</time><span class="dot" aria-hidden="true">·</span><span>3 min read</span></p></footer>
+</article></div>
+</div></aside>
+<section class="newsletter" aria-labelledby="newsletter-h">
+  <div class="container">
+    <div class="newsletter-copy">
+      <h2 class="newsletter-title" id="newsletter-h">Get the next analysis in your inbox</h2>
+      <p>New articles, with the primary sources linked, delivered as a digest.</p>
+    </div>
+    <form class="newsletter-form" data-newsletter novalidate>
+      <div class="field">
+        <label for="nl-email-11">Email address</label>
+        <input type="email" id="nl-email-11" name="email" autocomplete="email" inputmode="email" required aria-describedby="nl-hint-11 nl-error-11" placeholder="name@example.com">
+        <p class="hint" id="nl-hint-11">Enter the address where you want to receive the newsletter.</p>
+        <p class="field-error" id="nl-error-11" hidden></p>
+      </div>
+      <button class="button" type="submit">Subscribe to the newsletter</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-about">
+      <a class="brand" href="/"><span class="brand-name">The Parameter</span></a>
+      <p>The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer"><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/editorial-policy/">Editorial Policy</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/newsletter/">Newsletter</a></li><li><a href="/search/">Search</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></nav>
+    <div class="footer-legal">
+      <p>Demonstration edition: the articles, bylines and dates on this site are sample material that show the editorial format. They report no real events, statistics, quotations or prices. Sources link to real, published documents.</p>
+      <p>© 2026 The Parameter. Template legal pages must be reviewed before launch.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

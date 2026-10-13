@@ -1,0 +1,23 @@
+{
+  "name": "The Parameter",
+  "tagline": "Independent coverage of AI models, tools and research",
+  "description": "The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source.",
+  "url": "https://theparameter.example",
+  "locale": "en",
+  "today": "2026-10-12",
+  "contactEmail": "editor@theparameter.example",
+  "newsletter": {
+    "endpoint": "",
+    "method": "POST",
+    "emailField": "email",
+    "note": "Set newsletter.endpoint to your email service's form-post URL (Buttondown, Mailchimp, ConvertKit, Beehiiv, or your own function). Until then the form reports that delivery is not configured and never claims success."
+  },
+  "demoNotice": "Demonstration edition: the articles, bylines and dates on this site are sample material that show the editorial format. They report no real events, statistics, quotations or prices. Sources link to real, published documents.",
+  "sections": [
+    { "slug": "ai-news", "name": "AI News", "description": "Model releases, product announcements and industry developments, read for what changed and what remains unverified." },
+    { "slug": "trends", "name": "Trends", "description": "Emerging AI technologies and strategic shifts, with their practical uses and current limits." },
+    { "slug": "ai-tools", "name": "AI Tools", "description": "Tool and model comparisons built on criteria you can test yourself." },
+    { "slug": "research", "name": "Research", "description": "What studies demonstrate, what they do not, and how safety and regulation affect real deployments." },
+    { "slug": "guides", "name": "Guides", "description": "Practical, repeatable workflows for using AI in research, marketing and business work." }
+  ]
+}

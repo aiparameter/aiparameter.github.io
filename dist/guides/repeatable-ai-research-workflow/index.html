@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting | The Parameter</title>
+<meta name="description" content="A six-step method for using a model as a research assistant while keeping sources, claims and verification under your control.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://theparameter.example/guides/repeatable-ai-research-workflow/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Parameter" href="/feed.xml">
+<meta property="og:site_name" content="The Parameter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting">
+<meta property="og:description" content="A six-step method for using a model as a research assistant while keeping sources, claims and verification under your control.">
+<meta property="og:url" content="https://theparameter.example/guides/repeatable-ai-research-workflow/">
+<meta property="og:image" content="https://theparameter.example/images/og/repeatable-ai-research-workflow.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-09">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>document.documentElement.className+=" js"</script>
+<script src="/assets/js/site.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://theparameter.example/#organization","name":"The Parameter","url":"https://theparameter.example/","logo":{"@type":"ImageObject","url":"https://theparameter.example/images/logo-512.png","width":512,"height":512},"description":"The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source."},{"@type":"Person","@id":"https://theparameter.example/about/#leila-haddad","name":"Leila Haddad","jobTitle":"Guides Editor","url":"https://theparameter.example/about/#leila-haddad","worksFor":{"@id":"https://theparameter.example/#organization"}},{"@type":"Article","@id":"https://theparameter.example/guides/repeatable-ai-research-workflow/#article","headline":"Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting","description":"A six-step method for using a model as a research assistant while keeping sources, claims and verification under your control.","image":["https://theparameter.example/images/repeatable-ai-research-workflow-1200.webp","https://theparameter.example/images/og/repeatable-ai-research-workflow.jpg"],"datePublished":"2026-10-04","dateModified":"2026-10-09","author":{"@id":"https://theparameter.example/about/#leila-haddad"},"publisher":{"@id":"https://theparameter.example/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://theparameter.example/guides/repeatable-ai-research-workflow/"},"articleSection":"Productivity","keywords":"workflows, research tools, citations","wordCount":499,"inLanguage":"en","isAccessibleForFree":true,"citation":[{"@type":"CreativeWork","name":"SIFT (The Four Moves)","url":"https://hapgood.us/2019/06/19/sift-the-four-moves/"},{"@type":"CreativeWork","name":"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks","url":"https://arxiv.org/abs/2005.11401"},{"@type":"CreativeWork","name":"Building effective agents","url":"https://www.anthropic.com/engineering/building-effective-agents"}]},{"@type":"WebPage","@id":"https://theparameter.example/guides/repeatable-ai-research-workflow/","url":"https://theparameter.example/guides/repeatable-ai-research-workflow/","name":"Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting","isPartOf":{"@id":"https://theparameter.example/#website"},"breadcrumb":{"@id":"https://theparameter.example/guides/repeatable-ai-research-workflow/#breadcrumb"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://theparameter.example/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://theparameter.example/guides/"},{"@type":"ListItem","position":3,"name":"Productivity","item":"https://theparameter.example/guides/repeatable-ai-research-workflow/"}],"@id":"https://theparameter.example/guides/repeatable-ai-research-workflow/#breadcrumb"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="dateline"><div class="container"><p><time datetime="2026-10-12">Monday, October 12, 2026</time></p><p class="dateline-note">Demonstration edition</p></div></div>
+  <div class="masthead container">
+    <a class="brand" href="/"><svg class="brand-mark" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#12161b"/><g stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></g><circle cx="20" cy="10" r="3.5" fill="#00b8e6"/><circle cx="11" cy="16" r="3.5" fill="#fff"/><circle cx="17" cy="22" r="3.5" fill="#0052ff"/></svg><span class="brand-name">The Parameter</span></a>
+    <div class="masthead-actions">
+      <a class="button subscribe-link" href="/newsletter/">Subscribe</a>
+      <button class="button button--ghost menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+  </div>
+  <div class="site-menu" id="site-menu">
+    <div class="container menu-inner">
+      <nav class="primary-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/ai-news/">AI News</a></li><li><a href="/trends/">Trends</a></li><li><a href="/ai-tools/">AI Tools</a></li><li><a href="/research/">Research</a></li><li><a href="/guides/">Guides</a></li><li><a href="/about/">About</a></li><li><a href="/newsletter/">Newsletter</a></li></ul></nav>
+      <search class="site-search">
+        <form action="/search/" method="get">
+          <label class="sr-only" for="site-search-q">Search articles</label>
+          <input type="search" id="site-search-q" name="q" placeholder="Search articles" autocomplete="off" enterkeyhint="search">
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </search>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/guides/">Guides</a></li><li><span aria-current="page">Productivity</span></li></ol></nav>
+<article>
+  <header class="article-header">
+    <p class="category">Productivity</p>
+    <h1 class="article-title">Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting</h1>
+    <p class="article-dek">A six-step method for using a model as a research assistant while keeping sources, claims and verification under your control.</p>
+    <div class="byline-block">
+      <p>By <a href="/about/#leila-haddad" rel="author">Leila Haddad</a>, Guides Editor</p>
+      <p>Published <time datetime="2026-10-04">October 4, 2026</time></p>
+      <p>Updated <time datetime="2026-10-09">October 9, 2026</time></p>
+      <p>3 min read</p>
+    </div>
+    <p class="notice">Demonstration article. It shows the publication’s editorial format and reports no real events, statistics, quotations or prices. The sources listed below are real, published documents.</p>
+  </header>
+  <figure class="article-hero">
+    <img src="/images/repeatable-ai-research-workflow-800.webp" srcset="/images/repeatable-ai-research-workflow-480.webp 480w, /images/repeatable-ai-research-workflow-800.webp 800w, /images/repeatable-ai-research-workflow-1200.webp 1200w" sizes="(min-width: 80rem) 1176px, 100vw" width="1200" height="675" alt="Abstract illustration of ascending steps connected by a thin line, representing stages of a workflow" fetchpriority="high">
+    <figcaption>Abstract illustration of ascending steps connected by a thin line, representing stages of a workflow. Original illustration for The Parameter.</figcaption>
+  </figure>
+  <div class="article-layout">
+    <nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#1-define-the-question">1. Define the question</a></li><li><a href="#2-collect-sources-yourself">2. Collect sources yourself</a></li><li><a href="#3-ask-the-model-to-work-from-your-sources">3. Ask the model to work from your sources</a></li><li><a href="#4-verify-every-claim-you-will-publish">4. Verify every claim you will publish</a></li><li><a href="#5-draft-from-the-verified-list">5. Draft from the verified list</a></li><li><a href="#6-keep-a-research-log">6. Keep a research log</a></li><li><a href="#a-short-template">A short template</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+    <div class="article-main">
+      <div class="article-body">
+<p>Using a model for research goes wrong when the model becomes the source. It works when the model assists a process in which you choose the sources, check the claims and own the conclusion. This six-step workflow is designed to be repeated, so each project benefits from the last.</p>
+<h2 id="1-define-the-question">1. Define the question</h2>
+<p>Write one sentence stating what you need to know and who it is for. Add what would count as an answer, and what is out of scope. A model given a vague question returns a vague overview. A model given a precise question can help you search precisely.</p>
+<h2 id="2-collect-sources-yourself">2. Collect sources yourself</h2>
+<p>Gather the documents you will rely on: primary sources first, such as papers, filings, official data and original statements. Save each with its title, publisher, date and link. Retrieval-augmented generation research showed that answers improve when a model works from supplied text, which is why the quality of this collection matters more than any prompt.</p>
+<h2 id="3-ask-the-model-to-work-from-your-sources">3. Ask the model to work from your sources</h2>
+<p>Give the model the documents and tell it to answer only from them. Ask it to quote or point to the passage supporting every claim, and to say plainly when the sources do not contain the answer. Use the model for the jobs it handles well:</p>
+<ul><li>Extracting key points from long documents</li><li>Comparing what two sources say about the same topic</li><li>Listing open questions and conflicts between sources</li></ul>
+<p>Anthropic’s guidance on building with models recommends starting with simple steps, and a prompt chain fits here: extract, then compare, then draft, with a check between each stage.</p>
+<h2 id="4-verify-every-claim-you-will-publish">4. Verify every claim you will publish</h2>
+<p>This is the step that cannot be delegated. The SIFT method offers a compact checklist for evaluating information: stop, investigate the source, find better coverage, and trace claims to their origin. Apply it to anything the model reported.</p>
+<p>For each claim, record:</p>
+<ul><li>The sentence as you intend to state it</li><li>The source passage that supports it, with a link</li><li>Whether you read that passage yourself</li><li>A status: confirmed, partly supported, or unverified</li></ul>
+<p>Remove or soften anything unverified. Be especially strict with numbers, quotations, dates and names.</p>
+<h2 id="5-draft-from-the-verified-list">5. Draft from the verified list</h2>
+<p>Write the piece from your verified claims. A model can help with structure and clarity at this stage, but give it only the verified material. Review the draft for any statement that does not appear in your list.</p>
+<h2 id="6-keep-a-research-log">6. Keep a research log</h2>
+<p>Record the question, sources, prompts that worked, errors you caught and the final claim list. This log lets someone else reproduce your work and lets you improve the process. After a few projects, patterns in the errors you caught show where to add checks.</p>
+<h2 id="a-short-template">A short template</h2>
+<div class="table-wrap" role="region" aria-label="A short template (table)" tabindex="0"><table><thead><tr><th scope="col">Field</th><th scope="col">Entry</th></tr></thead><tbody><tr><th scope="row">Question</th><td>One sentence</td></tr><tr><th scope="row">Sources</th><td>Title, publisher, date, link</td></tr><tr><th scope="row">Claims</th><td>Statement, source passage, status</td></tr><tr><th scope="row">Open questions</th><td>What the sources could not answer</td></tr><tr><th scope="row">Reviewer</th><td>Name and date</td></tr></tbody></table></div>
+<p>Following the same steps each time makes the results consistent and the mistakes easier to find.</p>
+      </div>
+      <section class="sources" aria-labelledby="sources">
+        <h2 id="sources">Sources</h2>
+        <ol><li><a href="https://hapgood.us/2019/06/19/sift-the-four-moves/">SIFT (The Four Moves)</a>. Mike Caulfield, Hapgood, 2019.</li><li><a href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a>. Lewis et al., arXiv, 2020.</li><li><a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a>. Anthropic Engineering, 2024.</li></ol>
+      </section>
+      <footer class="article-footer">
+        <p><strong>Leila Haddad</strong>, Guides Editor. Demonstration byline. Writes practical workflows for marketing, research and operations.</p>
+        <p>Last updated <time datetime="2026-10-09">October 9, 2026</time>. Spotted an error? See our <a href="/editorial-policy/#corrections">corrections policy</a>.</p>
+        <p>More from <a href="/guides/">Guides</a>.</p>
+      </footer>
+    </div>
+  </div>
+</article>
+</div>
+<aside class="related" aria-labelledby="related-h"><div class="container">
+  <div class="section-head"><h2 class="section-title" id="related-h">Related articles</h2></div>
+  <div class="card-grid"><article class="article-card">
+  <div class="thumb"><img src="/images/ai-marketing-workflow-content-to-pipeline-800.webp" srcset="/images/ai-marketing-workflow-content-to-pipeline-480.webp 480w, /images/ai-marketing-workflow-content-to-pipeline-800.webp 800w, /images/ai-marketing-workflow-content-to-pipeline-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">Business</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/guides/ai-marketing-workflow-content-to-pipeline/">From Content Production to Pipeline: Where AI Can Improve a Marketing Workflow</a></h3>
+  <p class="summary">Map a marketing workflow stage by stage, mark where a model drafts and where a person decides, and measure the result against pipeline instead of output volume.</p>
+  <footer class="article-card__metadata"><p class="byline">By Leila Haddad</p><p class="meta"><time datetime="2026-10-07">Oct 7, 2026</time><span class="dot" aria-hidden="true">·</span><span>3 min read</span></p></footer>
+</article><article class="article-card">
+  <div class="thumb"><img src="/images/five-types-of-ai-research-tools-800.webp" srcset="/images/five-types-of-ai-research-tools-480.webp 480w, /images/five-types-of-ai-research-tools-800.webp 800w, /images/five-types-of-ai-research-tools-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">AI Tools</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/ai-tools/five-types-of-ai-research-tools/">Five Types of AI Research Tools Worth Evaluating for Faster, More Reliable Knowledge Work</a></h3>
+  <p class="summary">Search assistants, document readers, citation checkers, data analysts and note systems compared by use case and limitation. Pricing is deliberately omitted until verified.</p>
+  <footer class="article-card__metadata"><p class="byline">By Priya Nandakumar</p><p class="meta"><time datetime="2026-10-09">Oct 9, 2026</time><span class="dot" aria-hidden="true">·</span><span>3 min read</span></p></footer>
+</article><article class="article-card">
+  <div class="thumb"><img src="/images/inside-the-new-ai-model-800.webp" srcset="/images/inside-the-new-ai-model-480.webp 480w, /images/inside-the-new-ai-model-800.webp 800w, /images/inside-the-new-ai-model-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">AI News</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/ai-news/inside-the-new-ai-model/">Inside the New AI Model: What Changed, Who Benefits, and What Remains Uncertain</a></h3>
+  <p class="summary">A worked method for reading any model announcement: separate what the vendor changed from what independent evaluation can confirm, and name what stays unknown.</p>
+  <footer class="article-card__metadata"><p class="byline">By Amara Ellison</p><p class="meta"><time datetime="2026-10-12">Oct 12, 2026</time><span class="dot" aria-hidden="true">·</span><span>4 min read</span></p></footer>
+</article></div>
+</div></aside>
+<section class="newsletter" aria-labelledby="newsletter-h">
+  <div class="container">
+    <div class="newsletter-copy">
+      <h2 class="newsletter-title" id="newsletter-h">Get the next analysis in your inbox</h2>
+      <p>New articles, with the primary sources linked, delivered as a digest.</p>
+    </div>
+    <form class="newsletter-form" data-newsletter novalidate>
+      <div class="field">
+        <label for="nl-email-15">Email address</label>
+        <input type="email" id="nl-email-15" name="email" autocomplete="email" inputmode="email" required aria-describedby="nl-hint-15 nl-error-15" placeholder="name@example.com">
+        <p class="hint" id="nl-hint-15">Enter the address where you want to receive the newsletter.</p>
+        <p class="field-error" id="nl-error-15" hidden></p>
+      </div>
+      <button class="button" type="submit">Subscribe to the newsletter</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-about">
+      <a class="brand" href="/"><span class="brand-name">The Parameter</span></a>
+      <p>The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer"><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/editorial-policy/">Editorial Policy</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/newsletter/">Newsletter</a></li><li><a href="/search/">Search</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></nav>
+    <div class="footer-legal">
+      <p>Demonstration edition: the articles, bylines and dates on this site are sample material that show the editorial format. They report no real events, statistics, quotations or prices. Sources link to real, published documents.</p>
+      <p>© 2026 The Parameter. Template legal pages must be reviewed before launch.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

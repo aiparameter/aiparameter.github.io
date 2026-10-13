@@ -1,0 +1,201 @@
+[
+  {
+    "id": "art-001",
+    "slug": "inside-the-new-ai-model",
+    "section": "ai-news",
+    "category": "AI News",
+    "contentType": "news-analysis",
+    "headline": "Inside the New AI Model: What Changed, Who Benefits, and What Remains Uncertain",
+    "summary": "A worked method for reading any model announcement: separate what the vendor changed from what independent evaluation can confirm, and name what stays unknown.",
+    "author": "amara-ellison",
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "image": { "seed": 11, "motif": "layers", "alt": "Abstract illustration of stacked translucent layers, representing the components of a model release" },
+    "featured": true,
+    "tags": ["model releases", "evaluation", "benchmarks"],
+    "sources": [
+      { "title": "Holistic Evaluation of Language Models", "publisher": "Liang et al., arXiv", "year": 2022, "url": "https://arxiv.org/abs/2211.09110" },
+      { "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena", "publisher": "Zheng et al., arXiv", "year": 2023, "url": "https://arxiv.org/abs/2306.05685" },
+      { "title": "Model Cards for Model Reporting", "publisher": "Mitchell et al., arXiv", "year": 2018, "url": "https://arxiv.org/abs/1810.03993" }
+    ]
+  },
+  {
+    "id": "art-002",
+    "slug": "ai-infrastructure-race-computing-capacity",
+    "section": "ai-news",
+    "category": "Industry",
+    "contentType": "news-analysis",
+    "headline": "Inside the AI Infrastructure Race: Why Computing Capacity Is Becoming a Strategic Advantage",
+    "summary": "Chips, memory, networking and electricity now shape which companies can train and serve frontier models. A guide to reading partnership and investment announcements.",
+    "author": "amara-ellison",
+    "published": "2026-10-11",
+    "updated": "2026-10-11",
+    "image": { "seed": 23, "motif": "grid", "alt": "Abstract illustration of a lattice of connected nodes, representing data-center networking" },
+    "featured": false,
+    "tags": ["infrastructure", "compute", "energy"],
+    "sources": [
+      { "title": "Scaling Laws for Neural Language Models", "publisher": "Kaplan et al., arXiv", "year": 2020, "url": "https://arxiv.org/abs/2001.08361" },
+      { "title": "Training Compute-Optimal Large Language Models", "publisher": "Hoffmann et al., arXiv", "year": 2022, "url": "https://arxiv.org/abs/2203.15556" },
+      { "title": "Energy and AI", "publisher": "International Energy Agency", "year": 2025, "url": "https://www.iea.org/reports/energy-and-ai" }
+    ]
+  },
+  {
+    "id": "art-003",
+    "slug": "beyond-chatbots-ai-agents",
+    "section": "trends",
+    "category": "Trends",
+    "contentType": "analysis",
+    "headline": "Beyond Chatbots: How AI Agents Are Changing the Way Software Gets Work Done",
+    "summary": "Agents let a model plan, call tools and check results in a loop. What that enables in practice, where it breaks, and how to decide whether a task needs one.",
+    "author": "tomas-reyes",
+    "published": "2026-10-10",
+    "updated": "2026-10-11",
+    "image": { "seed": 37, "motif": "paths", "alt": "Abstract illustration of branching paths converging on a single point, representing an agent choosing between actions" },
+    "featured": false,
+    "tags": ["agents", "tool use", "automation"],
+    "sources": [
+      { "title": "ReAct: Synergizing Reasoning and Acting in Language Models", "publisher": "Yao et al., arXiv", "year": 2022, "url": "https://arxiv.org/abs/2210.03629" },
+      { "title": "Building effective agents", "publisher": "Anthropic Engineering", "year": 2024, "url": "https://www.anthropic.com/engineering/building-effective-agents" },
+      { "title": "Model Context Protocol", "publisher": "modelcontextprotocol.io", "year": 2024, "url": "https://modelcontextprotocol.io" }
+    ]
+  },
+  {
+    "id": "art-004",
+    "slug": "five-types-of-ai-research-tools",
+    "section": "ai-tools",
+    "category": "AI Tools",
+    "contentType": "review",
+    "headline": "Five Types of AI Research Tools Worth Evaluating for Faster, More Reliable Knowledge Work",
+    "summary": "Search assistants, document readers, citation checkers, data analysts and note systems compared by use case and limitation. Pricing is deliberately omitted until verified.",
+    "author": "priya-nandakumar",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "image": { "seed": 41, "motif": "stack", "alt": "Abstract illustration of five horizontal bars of different lengths, representing categories of research tools" },
+    "featured": false,
+    "tags": ["research tools", "retrieval", "citations"],
+    "sources": [
+      { "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", "publisher": "Lewis et al., arXiv", "year": 2020, "url": "https://arxiv.org/abs/2005.11401" },
+      { "title": "Lost in the Middle: How Language Models Use Long Contexts", "publisher": "Liu et al., arXiv", "year": 2023, "url": "https://arxiv.org/abs/2307.03172" }
+    ]
+  },
+  {
+    "id": "art-005",
+    "slug": "choosing-an-ai-model-compare-reasoning-speed-cost-reliability",
+    "section": "ai-tools",
+    "category": "Model Comparisons",
+    "contentType": "guide-analysis",
+    "headline": "Choosing an AI Model: How to Compare Reasoning, Speed, Cost, and Reliability",
+    "summary": "Public leaderboards answer a different question from yours. Build a small test set, measure four properties, and let the numbers from your own tasks decide.",
+    "author": "priya-nandakumar",
+    "published": "2026-10-08",
+    "updated": "2026-10-10",
+    "image": { "seed": 52, "motif": "scale", "alt": "Abstract illustration of a balance with four weights, representing trade-offs between model qualities" },
+    "featured": false,
+    "tags": ["evaluation", "model selection", "benchmarks"],
+    "sources": [
+      { "title": "Holistic Evaluation of Language Models", "publisher": "Liang et al., arXiv", "year": 2022, "url": "https://arxiv.org/abs/2211.09110" },
+      { "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena", "publisher": "Zheng et al., arXiv", "year": 2023, "url": "https://arxiv.org/abs/2306.05685" }
+    ]
+  },
+  {
+    "id": "art-006",
+    "slug": "ai-marketing-workflow-content-to-pipeline",
+    "section": "guides",
+    "category": "Business",
+    "contentType": "guide",
+    "headline": "From Content Production to Pipeline: Where AI Can Improve a Marketing Workflow",
+    "summary": "Map a marketing workflow stage by stage, mark where a model drafts and where a person decides, and measure the result against pipeline instead of output volume.",
+    "author": "leila-haddad",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "image": { "seed": 64, "motif": "funnel", "alt": "Abstract illustration of converging lines narrowing to a point, representing a marketing pipeline" },
+    "featured": false,
+    "tags": ["marketing", "workflows", "automation"],
+    "sources": [
+      { "title": "Generative AI at Work", "publisher": "Brynjolfsson, Li and Raymond, NBER Working Paper 31161", "year": 2023, "url": "https://www.nber.org/papers/w31161" },
+      { "title": "Building effective agents", "publisher": "Anthropic Engineering", "year": 2024, "url": "https://www.anthropic.com/engineering/building-effective-agents" }
+    ]
+  },
+  {
+    "id": "art-007",
+    "slug": "what-the-latest-ai-research-demonstrates",
+    "section": "research",
+    "category": "Research",
+    "contentType": "analysis",
+    "headline": "What the Latest AI Research Actually Demonstrates, and What It Does Not",
+    "summary": "A reader's guide to AI papers: separate the measurement from the headline, check what the benchmark covers, and watch for the leap from correlation to capability.",
+    "author": "priya-nandakumar",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "image": { "seed": 73, "motif": "waves", "alt": "Abstract illustration of overlapping sine waves, representing signal and noise in experimental results" },
+    "featured": false,
+    "tags": ["research", "evidence", "benchmarks"],
+    "sources": [
+      { "title": "Are Emergent Abilities of Large Language Models a Mirage?", "publisher": "Schaeffer et al., arXiv", "year": 2023, "url": "https://arxiv.org/abs/2304.15004" },
+      { "title": "Lost in the Middle: How Language Models Use Long Contexts", "publisher": "Liu et al., arXiv", "year": 2023, "url": "https://arxiv.org/abs/2307.03172" },
+      { "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models", "publisher": "Wei et al., arXiv", "year": 2022, "url": "https://arxiv.org/abs/2201.11903" }
+    ]
+  },
+  {
+    "id": "art-008",
+    "slug": "ai-governance-in-practice",
+    "section": "research",
+    "category": "Safety and Regulation",
+    "contentType": "analysis",
+    "headline": "AI Governance in Practice: What Organizations Need to Verify Before Deployment",
+    "summary": "Frameworks, regulation and security guidance reduced to a pre-deployment verification list covering risk, data, security, oversight and legal obligations.",
+    "author": "jonas-weber",
+    "published": "2026-10-05",
+    "updated": "2026-10-08",
+    "image": { "seed": 85, "motif": "shield", "alt": "Abstract illustration of nested outlines, representing layered controls around a system" },
+    "featured": false,
+    "tags": ["governance", "regulation", "security"],
+    "sources": [
+      { "title": "AI Risk Management Framework (AI RMF 1.0)", "publisher": "NIST", "year": 2023, "url": "https://www.nist.gov/itl/ai-risk-management-framework" },
+      { "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)", "publisher": "EUR-Lex", "year": 2024, "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj" },
+      { "title": "OWASP Top 10 for Large Language Model Applications", "publisher": "OWASP", "year": 2023, "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/" },
+      { "title": "ISO/IEC 42001:2023 Artificial intelligence management system", "publisher": "ISO", "year": 2023, "url": "https://www.iso.org/standard/81230.html" }
+    ]
+  },
+  {
+    "id": "art-009",
+    "slug": "repeatable-ai-research-workflow",
+    "section": "guides",
+    "category": "Productivity",
+    "contentType": "guide",
+    "headline": "Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting",
+    "summary": "A six-step method for using a model as a research assistant while keeping sources, claims and verification under your control.",
+    "author": "leila-haddad",
+    "published": "2026-10-04",
+    "updated": "2026-10-09",
+    "image": { "seed": 96, "motif": "steps", "alt": "Abstract illustration of ascending steps connected by a thin line, representing stages of a workflow" },
+    "featured": false,
+    "tags": ["workflows", "research tools", "citations"],
+    "sources": [
+      { "title": "SIFT (The Four Moves)", "publisher": "Mike Caulfield, Hapgood", "year": 2019, "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/" },
+      { "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", "publisher": "Lewis et al., arXiv", "year": 2020, "url": "https://arxiv.org/abs/2005.11401" },
+      { "title": "Building effective agents", "publisher": "Anthropic Engineering", "year": 2024, "url": "https://www.anthropic.com/engineering/building-effective-agents" }
+    ]
+  },
+  {
+    "id": "art-010",
+    "slug": "where-ai-is-heading-next",
+    "section": "trends",
+    "category": "Outlook",
+    "contentType": "analysis",
+    "headline": "Where AI Is Heading Next: Five Developments to Watch and the Evidence Behind Them",
+    "summary": "Agents, cheaper inference, better evaluation, tighter regulation and energy limits: five developments, the evidence for each, and what would change our assessment.",
+    "author": "amara-ellison",
+    "published": "2026-10-03",
+    "updated": "2026-10-10",
+    "image": { "seed": 108, "motif": "horizon", "alt": "Abstract illustration of concentric arcs rising over a horizon line, representing future direction" },
+    "featured": false,
+    "tags": ["outlook", "agents", "energy", "regulation"],
+    "sources": [
+      { "title": "Building effective agents", "publisher": "Anthropic Engineering", "year": 2024, "url": "https://www.anthropic.com/engineering/building-effective-agents" },
+      { "title": "Scaling Laws for Neural Language Models", "publisher": "Kaplan et al., arXiv", "year": 2020, "url": "https://arxiv.org/abs/2001.08361" },
+      { "title": "Energy and AI", "publisher": "International Energy Agency", "year": 2025, "url": "https://www.iea.org/reports/energy-and-ai" },
+      { "title": "AI Risk Management Framework (AI RMF 1.0)", "publisher": "NIST", "year": 2023, "url": "https://www.nist.gov/itl/ai-risk-management-framework" }
+    ]
+  }
+]

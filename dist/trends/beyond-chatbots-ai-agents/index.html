@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond Chatbots: How AI Agents Are Changing the Way Software Gets Work Done | The Parameter</title>
+<meta name="description" content="Agents let a model plan, call tools and check results in a loop. What that enables in practice, where it breaks, and how to decide whether a task needs one.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://theparameter.example/trends/beyond-chatbots-ai-agents/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="The Parameter" href="/feed.xml">
+<meta property="og:site_name" content="The Parameter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beyond Chatbots: How AI Agents Are Changing the Way Software Gets Work Done">
+<meta property="og:description" content="Agents let a model plan, call tools and check results in a loop. What that enables in practice, where it breaks, and how to decide whether a task needs one.">
+<meta property="og:url" content="https://theparameter.example/trends/beyond-chatbots-ai-agents/">
+<meta property="og:image" content="https://theparameter.example/images/og/beyond-chatbots-ai-agents.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-10">
+<meta property="article:modified_time" content="2026-10-11">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>document.documentElement.className+=" js"</script>
+<script src="/assets/js/site.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://theparameter.example/#organization","name":"The Parameter","url":"https://theparameter.example/","logo":{"@type":"ImageObject","url":"https://theparameter.example/images/logo-512.png","width":512,"height":512},"description":"The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source."},{"@type":"Person","@id":"https://theparameter.example/about/#tomas-reyes","name":"Tomás Reyes","jobTitle":"Technology Correspondent","url":"https://theparameter.example/about/#tomas-reyes","worksFor":{"@id":"https://theparameter.example/#organization"}},{"@type":"Article","@id":"https://theparameter.example/trends/beyond-chatbots-ai-agents/#article","headline":"Beyond Chatbots: How AI Agents Are Changing the Way Software Gets Work Done","description":"Agents let a model plan, call tools and check results in a loop. What that enables in practice, where it breaks, and how to decide whether a task needs one.","image":["https://theparameter.example/images/beyond-chatbots-ai-agents-1200.webp","https://theparameter.example/images/og/beyond-chatbots-ai-agents.jpg"],"datePublished":"2026-10-10","dateModified":"2026-10-11","author":{"@id":"https://theparameter.example/about/#tomas-reyes"},"publisher":{"@id":"https://theparameter.example/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://theparameter.example/trends/beyond-chatbots-ai-agents/"},"articleSection":"Trends","keywords":"agents, tool use, automation","wordCount":536,"inLanguage":"en","isAccessibleForFree":true,"citation":[{"@type":"CreativeWork","name":"ReAct: Synergizing Reasoning and Acting in Language Models","url":"https://arxiv.org/abs/2210.03629"},{"@type":"CreativeWork","name":"Building effective agents","url":"https://www.anthropic.com/engineering/building-effective-agents"},{"@type":"CreativeWork","name":"Model Context Protocol","url":"https://modelcontextprotocol.io"}]},{"@type":"WebPage","@id":"https://theparameter.example/trends/beyond-chatbots-ai-agents/","url":"https://theparameter.example/trends/beyond-chatbots-ai-agents/","name":"Beyond Chatbots: How AI Agents Are Changing the Way Software Gets Work Done","isPartOf":{"@id":"https://theparameter.example/#website"},"breadcrumb":{"@id":"https://theparameter.example/trends/beyond-chatbots-ai-agents/#breadcrumb"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://theparameter.example/"},{"@type":"ListItem","position":2,"name":"Trends","item":"https://theparameter.example/trends/"},{"@type":"ListItem","position":3,"name":"Trends","item":"https://theparameter.example/trends/beyond-chatbots-ai-agents/"}],"@id":"https://theparameter.example/trends/beyond-chatbots-ai-agents/#breadcrumb"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="dateline"><div class="container"><p><time datetime="2026-10-12">Monday, October 12, 2026</time></p><p class="dateline-note">Demonstration edition</p></div></div>
+  <div class="masthead container">
+    <a class="brand" href="/"><svg class="brand-mark" aria-hidden="true" focusable="false" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#12161b"/><g stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="6" y1="10" x2="26" y2="10"/><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="22" x2="26" y2="22"/></g><circle cx="20" cy="10" r="3.5" fill="#00b8e6"/><circle cx="11" cy="16" r="3.5" fill="#fff"/><circle cx="17" cy="22" r="3.5" fill="#0052ff"/></svg><span class="brand-name">The Parameter</span></a>
+    <div class="masthead-actions">
+      <a class="button subscribe-link" href="/newsletter/">Subscribe</a>
+      <button class="button button--ghost menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+  </div>
+  <div class="site-menu" id="site-menu">
+    <div class="container menu-inner">
+      <nav class="primary-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/ai-news/">AI News</a></li><li><a href="/trends/">Trends</a></li><li><a href="/ai-tools/">AI Tools</a></li><li><a href="/research/">Research</a></li><li><a href="/guides/">Guides</a></li><li><a href="/about/">About</a></li><li><a href="/newsletter/">Newsletter</a></li></ul></nav>
+      <search class="site-search">
+        <form action="/search/" method="get">
+          <label class="sr-only" for="site-search-q">Search articles</label>
+          <input type="search" id="site-search-q" name="q" placeholder="Search articles" autocomplete="off" enterkeyhint="search">
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </search>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/trends/">Trends</a></li><li><span aria-current="page">Trends</span></li></ol></nav>
+<article>
+  <header class="article-header">
+    <p class="category">Trends</p>
+    <h1 class="article-title">Beyond Chatbots: How AI Agents Are Changing the Way Software Gets Work Done</h1>
+    <p class="article-dek">Agents let a model plan, call tools and check results in a loop. What that enables in practice, where it breaks, and how to decide whether a task needs one.</p>
+    <div class="byline-block">
+      <p>By <a href="/about/#tomas-reyes" rel="author">Tomás Reyes</a>, Technology Correspondent</p>
+      <p>Published <time datetime="2026-10-10">October 10, 2026</time></p>
+      <p>Updated <time datetime="2026-10-11">October 11, 2026</time></p>
+      <p>3 min read</p>
+    </div>
+    <p class="notice">Demonstration article. It shows the publication’s editorial format and reports no real events, statistics, quotations or prices. The sources listed below are real, published documents.</p>
+  </header>
+  <figure class="article-hero">
+    <img src="/images/beyond-chatbots-ai-agents-800.webp" srcset="/images/beyond-chatbots-ai-agents-480.webp 480w, /images/beyond-chatbots-ai-agents-800.webp 800w, /images/beyond-chatbots-ai-agents-1200.webp 1200w" sizes="(min-width: 80rem) 1176px, 100vw" width="1200" height="675" alt="Abstract illustration of branching paths converging on a single point, representing an agent choosing between actions" fetchpriority="high">
+    <figcaption>Abstract illustration of branching paths converging on a single point, representing an agent choosing between actions. Original illustration for The Parameter.</figcaption>
+  </figure>
+  <div class="article-layout">
+    <nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#what-an-agent-is">What an agent is</a></li><li><a href="#what-it-enables">What it enables</a></li><li><a href="#where-it-breaks">Where it breaks</a></li><li><a href="#deciding-whether-a-task-needs-one">Deciding whether a task needs one</a></li><li><a href="#the-current-state">The current state</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+    <div class="article-main">
+      <div class="article-body">
+<p>A chatbot answers a question and waits. An agent is given a goal, decides what to do next, uses tools, looks at the result and continues until it finishes or stops. The difference sounds small. It changes what software can be asked to do, and how it can fail.</p>
+<h2 id="what-an-agent-is">What an agent is</h2>
+<p>In its simplest form, an agent is a language model running in a loop with access to tools. The ReAct research popularized a pattern in which a model alternates between reasoning about a problem and taking an action, such as searching or calling a function, then reasoning again with what it learned. Most agent systems today are variations on that loop with better tools, memory and guardrails.</p>
+<p>Anthropic’s engineering guidance draws a useful line between two designs. <strong>Workflows</strong> run a model through steps that a developer defined in advance. <strong>Agents</strong> let the model choose its own steps. Workflows are more predictable and easier to test. Agents are more flexible and harder to bound.</p>
+<h2 id="what-it-enables">What it enables</h2>
+<ul><li><strong>Multi-step tasks:</strong> gathering information from several systems, combining it and producing a result.</li><li><strong>Software work:</strong> reading a codebase, making a change, running the tests and responding to failures.</li><li><strong>Operational tasks:</strong> triaging a queue, drafting responses and escalating the cases that need a person.</li></ul>
+<p>Connecting agents to tools has also created a need for common interfaces. The Model Context Protocol is one open attempt at a standard way for a model to reach external data and services, so that each integration is not rebuilt from scratch.</p>
+<h2 id="where-it-breaks">Where it breaks</h2>
+<p>Agents inherit the weaknesses of the model and add new ones:</p>
+<ol><li><strong>Compounding errors.</strong> A small mistake early in a long sequence can carry through every later step.</li><li><strong>Unbounded cost and time.</strong> A loop with no limit can run far longer than anyone intended.</li><li><strong>Tool misuse.</strong> An agent with write access can change real systems, so mistakes become actions.</li><li><strong>Untrusted input.</strong> Text from a web page or document can contain instructions that attempt to redirect the agent.</li><li><strong>Hard-to-reproduce behavior.</strong> The same goal can produce different paths on different runs, which complicates debugging.</li></ol>
+<h2 id="deciding-whether-a-task-needs-one">Deciding whether a task needs one</h2>
+<p>Start with the simplest design that works. A single well-written prompt handles many tasks. A fixed workflow handles many of the rest. An agent earns its added complexity when the steps cannot be known in advance and when a wrong step can be detected and undone.</p>
+<p>A practical test has four parts:</p>
+<ul><li>Can the task be broken into fixed steps? If yes, use a workflow.</li><li>Is the cost of an error low, or can a person approve the risky steps? If not, add a human checkpoint.</li><li>Is there an objective way to check the result? If not, you cannot tell whether the agent succeeded.</li><li>Can you set limits on time, spending and permissions? If not, do not deploy it yet.</li></ul>
+<h2 id="the-current-state">The current state</h2>
+<p>Agents are most dependable where the environment is narrow, the tools are well defined and success can be checked automatically. They are least dependable in open-ended settings with ambiguous goals. Evidence of general reliability should be treated cautiously until it comes from independent tests on tasks like your own.</p>
+      </div>
+      <section class="sources" aria-labelledby="sources">
+        <h2 id="sources">Sources</h2>
+        <ol><li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a>. Yao et al., arXiv, 2022.</li><li><a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a>. Anthropic Engineering, 2024.</li><li><a href="https://modelcontextprotocol.io">Model Context Protocol</a>. modelcontextprotocol.io, 2024.</li></ol>
+      </section>
+      <footer class="article-footer">
+        <p><strong>Tomás Reyes</strong>, Technology Correspondent. Demonstration byline. Covers agents, tool protocols and developer tooling.</p>
+        <p>Last updated <time datetime="2026-10-11">October 11, 2026</time>. Spotted an error? See our <a href="/editorial-policy/#corrections">corrections policy</a>.</p>
+        <p>More from <a href="/trends/">Trends</a>.</p>
+      </footer>
+    </div>
+  </div>
+</article>
+</div>
+<aside class="related" aria-labelledby="related-h"><div class="container">
+  <div class="section-head"><h2 class="section-title" id="related-h">Related articles</h2></div>
+  <div class="card-grid"><article class="article-card">
+  <div class="thumb"><img src="/images/where-ai-is-heading-next-800.webp" srcset="/images/where-ai-is-heading-next-480.webp 480w, /images/where-ai-is-heading-next-800.webp 800w, /images/where-ai-is-heading-next-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">Outlook</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/trends/where-ai-is-heading-next/">Where AI Is Heading Next: Five Developments to Watch and the Evidence Behind Them</a></h3>
+  <p class="summary">Agents, cheaper inference, better evaluation, tighter regulation and energy limits: five developments, the evidence for each, and what would change our assessment.</p>
+  <footer class="article-card__metadata"><p class="byline">By Amara Ellison</p><p class="meta"><time datetime="2026-10-03">Oct 3, 2026</time><span class="dot" aria-hidden="true">·</span><span>3 min read</span></p></footer>
+</article><article class="article-card">
+  <div class="thumb"><img src="/images/ai-marketing-workflow-content-to-pipeline-800.webp" srcset="/images/ai-marketing-workflow-content-to-pipeline-480.webp 480w, /images/ai-marketing-workflow-content-to-pipeline-800.webp 800w, /images/ai-marketing-workflow-content-to-pipeline-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">Business</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/guides/ai-marketing-workflow-content-to-pipeline/">From Content Production to Pipeline: Where AI Can Improve a Marketing Workflow</a></h3>
+  <p class="summary">Map a marketing workflow stage by stage, mark where a model drafts and where a person decides, and measure the result against pipeline instead of output volume.</p>
+  <footer class="article-card__metadata"><p class="byline">By Leila Haddad</p><p class="meta"><time datetime="2026-10-07">Oct 7, 2026</time><span class="dot" aria-hidden="true">·</span><span>3 min read</span></p></footer>
+</article><article class="article-card">
+  <div class="thumb"><img src="/images/inside-the-new-ai-model-800.webp" srcset="/images/inside-the-new-ai-model-480.webp 480w, /images/inside-the-new-ai-model-800.webp 800w, /images/inside-the-new-ai-model-1200.webp 1200w" sizes="(min-width: 64rem) 400px, (min-width: 40rem) 50vw, 100vw" width="1200" height="675" alt="" loading="lazy" decoding="async"></div>
+  <p class="category">AI News</p>
+  <h3 class="article-card__title"><a class="title-link stretched" href="/ai-news/inside-the-new-ai-model/">Inside the New AI Model: What Changed, Who Benefits, and What Remains Uncertain</a></h3>
+  <p class="summary">A worked method for reading any model announcement: separate what the vendor changed from what independent evaluation can confirm, and name what stays unknown.</p>
+  <footer class="article-card__metadata"><p class="byline">By Amara Ellison</p><p class="meta"><time datetime="2026-10-12">Oct 12, 2026</time><span class="dot" aria-hidden="true">·</span><span>4 min read</span></p></footer>
+</article></div>
+</div></aside>
+<section class="newsletter" aria-labelledby="newsletter-h">
+  <div class="container">
+    <div class="newsletter-copy">
+      <h2 class="newsletter-title" id="newsletter-h">Get the next analysis in your inbox</h2>
+      <p>New articles, with the primary sources linked, delivered as a digest.</p>
+    </div>
+    <form class="newsletter-form" data-newsletter novalidate>
+      <div class="field">
+        <label for="nl-email-9">Email address</label>
+        <input type="email" id="nl-email-9" name="email" autocomplete="email" inputmode="email" required aria-describedby="nl-hint-9 nl-error-9" placeholder="name@example.com">
+        <p class="hint" id="nl-hint-9">Enter the address where you want to receive the newsletter.</p>
+        <p class="field-error" id="nl-error-9" hidden></p>
+      </div>
+      <button class="button" type="submit">Subscribe to the newsletter</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-about">
+      <a class="brand" href="/"><span class="brand-name">The Parameter</span></a>
+      <p>The Parameter is an AI publication covering news, trends, tools, model releases, research and practical applications, with every claim tied to a source.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer"><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/editorial-policy/">Editorial Policy</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li><li><a href="/newsletter/">Newsletter</a></li><li><a href="/search/">Search</a></li><li><a href="/feed.xml">RSS feed</a></li></ul></nav>
+    <div class="footer-legal">
+      <p>Demonstration edition: the articles, bylines and dates on this site are sample material that show the editorial format. They report no real events, statistics, quotations or prices. Sources link to real, published documents.</p>
+      <p>© 2026 The Parameter. Template legal pages must be reviewed before launch.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
