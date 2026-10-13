@@ -1,7 +1,0 @@
-[
-  { "slug": "amara-ellison", "name": "Amara Ellison", "role": "Senior Editor, Models and Industry", "bio": "Demonstration byline. Covers model releases and the economics of AI infrastructure." },
-  { "slug": "tomas-reyes", "name": "Tomás Reyes", "role": "Technology Correspondent", "bio": "Demonstration byline. Covers agents, tool protocols and developer tooling." },
-  { "slug": "priya-nandakumar", "name": "Priya Nandakumar", "role": "Research Editor", "bio": "Demonstration byline. Reads papers and evaluation methods so readers do not have to." },
-  { "slug": "jonas-weber", "name": "Jonas Weber", "role": "Policy and Safety Reporter", "bio": "Demonstration byline. Covers governance frameworks, security and regulation." },
-  { "slug": "leila-haddad", "name": "Leila Haddad", "role": "Guides Editor", "bio": "Demonstration byline. Writes practical workflows for marketing, research and operations." }
-]
