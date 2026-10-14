@@ -274,7 +274,7 @@ button, input, select { font: inherit; color: inherit; }
 .newsletter-form .hint { font-size: var(--text-caption); color: var(--on-dark-2); }
 .newsletter-form .button { background: var(--cyan); border-color: var(--cyan); color: var(--ink); }
 .newsletter-form .button:hover { background: #4fd5f2; border-color: #4fd5f2; color: var(--ink); }
-.newsletter :focus-visible { outline-color: #fff; }
+.newsletter :focus-visible { outline-color: #0d0d0d; }
 .field-error { color: #ffb4b4; font-size: var(--text-ui); font-weight: 600; }
 .field input[aria-invalid="true"] { border-color: #ff8a8a; border-width: 2px; }
 .form-status { font-size: var(--text-ui); min-height: 1.5em; }
