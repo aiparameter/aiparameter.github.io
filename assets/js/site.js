@@ -1,5 +1,5 @@
-window.PARAMETER_CONFIG={"newsletterEndpoint":"","newsletterMethod":"POST","newsletterEmailField":"email","mailchimpAction":"https://github.us20.list-manage.com/subscribe/post?u=b59498ef7b47fcea455658305&id=0c73678b2b"};
-/* To enable subscriptions: paste your Mailchimp embedded-form action URL into "mailchimpAction", e.g. "https://YOURDOMAIN.usXX.list-manage.com/subscribe/post?u=XXXX&id=YYYY" */
+window.PARAMETER_CONFIG={"newsletterEndpoint":"","newsletterMethod":"POST","newsletterEmailField":"email","appsScriptUrl":"https://script.google.com/macros/s/AKfycbyL9guD1xoGDjTz2DGGqN7jwU_8ctB3vT_fyoZfIRWWIadOVC4hn7hvXG96IRdS7uRd/exec"};
+/* To enable subscriptions: paste your Google Apps Script web app URL (ends in /exec) into "appsScriptUrl". */
 /* The Parameter: progressive enhancement only. Pages are fully readable without this file. */
 (function () {
   "use strict";
@@ -25,7 +25,7 @@ window.PARAMETER_CONFIG={"newsletterEndpoint":"","newsletterMethod":"POST","news
 
   /* ---------- Newsletter forms ---------- */
   var config = window.PARAMETER_CONFIG || {};
-  if (config.mailchimpAction || config.newsletterEndpoint) {
+  if (config.appsScriptUrl || config.newsletterEndpoint) {
     var demoNotice = document.getElementById("newsletter-demo-notice");
     if (demoNotice) demoNotice.hidden = true;
   }
@@ -63,10 +63,10 @@ window.PARAMETER_CONFIG={"newsletterEndpoint":"","newsletterMethod":"POST","news
       if (!value) { showError("Enter your email address."); return; }
       if (!input.checkValidity()) { showError("Enter a valid email address, for example name@example.com."); return; }
 
-      if (config.mailchimpAction) {
+      if (config.appsScriptUrl) {
         button.disabled = true;
         setStatus("info", "Sending your request…");
-        var cbName = "mcCallback" + Date.now();
+        var cbName = "nlCallback" + Date.now();
         var scriptEl = document.createElement("script");
         var done = false;
         function finish(state, msg) {
@@ -77,19 +77,18 @@ window.PARAMETER_CONFIG={"newsletterEndpoint":"","newsletterMethod":"POST","news
           if (scriptEl.parentNode) scriptEl.parentNode.removeChild(scriptEl);
         }
         window[cbName] = function (data) {
-          if (data && data.result === "success") {
-            finish("success", "Almost done. Check your inbox and open the confirmation email from us to complete your subscription.");
+          if (data && data.ok) {
+            finish("success", data.message || "Almost done. Check your inbox and open the confirmation email to complete your subscription.");
             form.reset();
           } else {
-            var msg = (data && data.msg ? String(data.msg) : "").replace(/<[^>]*>/g, "").replace(/^\d+\s*-\s*/, "").trim();
-            finish("error", msg || "The subscription could not be completed. Please try again.");
+            finish("error", (data && data.message) || "The subscription could not be completed. Please try again.");
           }
         };
         scriptEl.onerror = function () { finish("error", "We could not reach the subscription service. Check your connection and try again."); };
-        scriptEl.src = config.mailchimpAction.replace("/subscribe/post?", "/subscribe/post-json?") +
-          "&EMAIL=" + encodeURIComponent(value) + "&c=" + cbName;
+        scriptEl.src = config.appsScriptUrl + (config.appsScriptUrl.indexOf("?") > -1 ? "&" : "?") +
+          "action=subscribe&email=" + encodeURIComponent(value) + "&callback=" + cbName;
         document.body.appendChild(scriptEl);
-        setTimeout(function () { finish("error", "The subscription service took too long to respond. Please try again."); }, 15000);
+        setTimeout(function () { finish("error", "The subscription service took too long to respond. Please try again."); }, 20000);
         return;
       }
 
