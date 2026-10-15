@@ -117,6 +117,48 @@ window.PARAMETER_CONFIG={"newsletterEndpoint":"","newsletterMethod":"POST","news
     });
   });
 
+  /* ---------- Subscription confirmation / unsubscribe result page ---------- */
+  var subBox = document.querySelector("[data-subscription-result]");
+  if (subBox) {
+    var qs = new URLSearchParams(window.location.search);
+    var subAction = qs.get("action");
+    var subToken = qs.get("token");
+    var subTitle = document.querySelector("[data-sub-title]");
+    var subMsg = document.querySelector("[data-sub-message]");
+    var subActions = subBox.querySelector("[data-sub-actions]");
+    var showResult = function (title, msg) {
+      subTitle.textContent = title;
+      subMsg.textContent = msg;
+      if (subActions) subActions.hidden = false;
+      document.title = title + " | The Parameter";
+    };
+    if ((subAction !== "confirm" && subAction !== "unsubscribe") || !subToken || !config.appsScriptUrl) {
+      showResult("Link not valid", "This link is incomplete. Please use the link from your email, or subscribe again from the Newsletter page.");
+    } else {
+      var subCb = "subCallback" + Date.now();
+      var subScript = document.createElement("script");
+      var subDone = false;
+      var subFinish = function (title, msg) {
+        if (subDone) return; subDone = true;
+        showResult(title, msg);
+        try { delete window[subCb]; } catch (err) { window[subCb] = undefined; }
+        if (subScript.parentNode) subScript.parentNode.removeChild(subScript);
+      };
+      window[subCb] = function (data) {
+        if (data && data.ok) {
+          subFinish(data.title, data.message);
+        } else {
+          subFinish((data && data.title) || "Link not valid", (data && data.message) || "This link is not valid or has expired. Please subscribe again from the Newsletter page.");
+        }
+      };
+      subScript.onerror = function () { subFinish("Something went wrong", "We could not reach the subscription service. Please try the link again in a few minutes."); };
+      subScript.src = config.appsScriptUrl + (config.appsScriptUrl.indexOf("?") > -1 ? "&" : "?") +
+        "action=" + encodeURIComponent(subAction) + "&token=" + encodeURIComponent(subToken) + "&callback=" + subCb;
+      document.body.appendChild(subScript);
+      setTimeout(function () { subFinish("Something went wrong", "The subscription service took too long to respond. Please try the link again."); }, 20000);
+    }
+  }
+
   /* ---------- Search ---------- */
   var results = document.getElementById("search-results");
   if (results) {
