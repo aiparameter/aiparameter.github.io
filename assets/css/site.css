@@ -144,6 +144,14 @@ button, input, select { font: inherit; color: inherit; }
   width: 100%; min-width: 0;
 }
 .site-search input[type="search"]::placeholder, .field input::placeholder { color: #5b6672; }
+/* Typed text must stay dark on the white input, including inside the dark newsletter band
+   (inputs inherit colour, which was white there and made the text invisible). */
+.site-search input[type="search"], .field input, .search-form input[type="search"], .search-form select {
+  color: var(--ink); -webkit-text-fill-color: var(--ink); caret-color: var(--ink);
+}
+.field input:-webkit-autofill, .field input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--ink); box-shadow: 0 0 0 1000px #fff inset;
+}
 .search-button {
   min-height: 44px; padding: 0 var(--s4); border: 1px solid var(--ink); background: var(--ink);
   color: #fff; border-radius: var(--radius); font-weight: 600; font-size: var(--text-ui); cursor: pointer;
