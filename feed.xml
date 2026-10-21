@@ -10,4 +10,20 @@
     <item><title>AI Governance in Practice: What Organizations Need to Verify Before Deployment</title><link>https://aiparameter.github.io/research/ai-governance-in-practice/</link><guid isPermaLink="true">https://aiparameter.github.io/research/ai-governance-in-practice/</guid><pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate><category>Safety and Regulation</category><description>Frameworks, regulation and security guidance reduced to a pre-deployment verification list covering risk, data, security, oversight and legal obligations.</description></item>
     <item><title>Build a Repeatable AI Research Workflow: From Source Collection to Evidence-Based Reporting</title><link>https://aiparameter.github.io/guides/repeatable-ai-research-workflow/</link><guid isPermaLink="true">https://aiparameter.github.io/guides/repeatable-ai-research-workflow/</guid><pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate><category>Productivity</category><description>A six-step method for using a model as a research assistant while keeping sources, claims and verification under your control.</description></item>
     <item><title>Where AI Is Heading Next: Five Developments to Watch and the Evidence Behind Them</title><link>https://aiparameter.github.io/trends/where-ai-is-heading-next/</link><guid isPermaLink="true">https://aiparameter.github.io/trends/where-ai-is-heading-next/</guid><pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate><category>Outlook</category><description>Agents, cheaper inference, better evaluation, tighter regulation and energy limits: five developments, the evidence for each, and what would change our assessment.</description></item>
-</channel></rss>
+    <item>
+      <title>Autonomous AI Agents in Enterprise: 2026 Production Deployments</title>
+      <link>https://aiparameter.github.io/trends/autonomous-ai-agents-in-enterprise-2026/</link>
+      <guid>https://aiparameter.github.io/trends/autonomous-ai-agents-in-enterprise-2026/</guid>
+      <pubDate>Wed, 21 Oct 2026 12:00:00 GMT</pubDate>
+      <description>How Fortune 500 engineering teams are deploying deterministic agentic workflows with verifiable evaluations.</description>
+      <category>Trends</category>
+    </item>
+    <item>
+      <title>A Chart Is Not a Report. A New Claude Skill Tries to Teach the Difference</title>
+      <link>https://aiparameter.github.io/ai-tools/a-chart-is-not-a-report-a-new-claude-skill-tries-to-teach-the-difference/</link>
+      <guid>https://aiparameter.github.io/ai-tools/a-chart-is-not-a-report-a-new-claude-skill-tries-to-teach-the-difference/</guid>
+      <pubDate>Wed, 21 Oct 2026 13:18:20 GMT</pubDate>
+      <description>A Claude Skill that transforms raw data into accurate, interactive reports with clear narratives and purposeful visuals.</description>
+      <category>AI Tools</category>
+    </item>
+  </channel></rss>
